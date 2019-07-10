@@ -12,12 +12,19 @@ import './App.css';
 // import ParentComponent from './component/ParentComponent';
 import UserGreeting from './component/UserGreeting';
 import NameList from './component/NameList';
+import Stylesheets from './component/Stylesheets';
+import Inline from './component/Inline';
 // import Greet from './component/Greet';
-
+import './appStyle.css'
+import style from './appStyle.module.css'
+import Form from './component/Form'
 function App() {
   return (
     <div className="App">
+      {/* <Inline /> */}
 
+      {/* <h1 className='error'>Error</h1>
+      <h1 className={style}>Success</h1> */}
       {/* <Greet />
       <Welcome /> */}
       {/* <Hello name="bruce" heroName="fbuefbe">
@@ -50,8 +57,9 @@ function App() {
         <input type="submit">submit</input>
 
       </form> */}
-      <NameList />
-
+      {/* <NameList /> */}
+      {/* <Stylesheets primary={true} /> */}
+      <Form />
     </div>
   );
 }
